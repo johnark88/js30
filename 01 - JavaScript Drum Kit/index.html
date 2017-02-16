@@ -4,6 +4,7 @@
     <head>
         <meta charset="utf-8">
         <title>DrumKit JS30 - 01</title>
+        <script src="client.js" charset="utf-8"></script>
         <link rel="stylesheet" href="style.css">
     </head>
 
@@ -46,7 +47,8 @@
                 <span class="sound"> Tink </span>
             </div>
 
-        </div><!-- closing div tag -->
+        </div>
+        <!-- closing div tag -->
     </body>
 
     <!-- audio bound to keys -->
@@ -59,13 +61,4 @@
     <audio data-key="74" src="sounds/snare.wav"></audio>
     <audio data-key="75" src="sounds/tom.wav"></audio>
     <audio data-key="76" src="sounds/tink.wav"></audio>
-
-    <script>
-    window.addEventListener('keydown',function(e){
-      const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-      console.log(audio);
-      
-    });
-    </script>
-
 </html>
